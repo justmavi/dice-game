@@ -1,0 +1,5 @@
+plugins
+log*
+gamemodes
+*.dll
+*.exe
