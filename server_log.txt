@@ -20503,3 +20503,849 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [18:00:04] 
 [18:00:04] [Pawn.CMD] plugin unloaded
 [18:00:04] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:54:30] 
+[08:54:30] Server Plugins
+[08:54:30] --------------
+[08:54:30]  Loading plugin: crashdetect
+[08:54:30]   CrashDetect plugin 4.21
+[08:54:30]   Loaded.
+[08:54:30]  Loading plugin: streamer
+[08:54:30] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:54:30]   Loaded.
+[08:54:30]  Loading plugin: mysql
+[08:54:30]  >> plugin.mysql: R41-4 successfully loaded.
+[08:54:30]   Loaded.
+[08:54:30]  Loading plugin: sscanf
+[08:54:31] 
+[08:54:31]  ===============================
+[08:54:31] 
+[08:54:31]       sscanf plugin loaded.     
+[08:54:31] 
+[08:54:31]          Version: 2.13.8
+[08:54:31] 
+[08:54:31]    (c) 2022 Alex "Y_Less" Cole  
+[08:54:31] 
+[08:54:31]  ===============================
+[08:54:31] 
+[08:54:31]   Loaded.
+[08:54:31]  Loading plugin: pawncmd
+[08:54:32] [Pawn.CMD] plugin v3.4.0 loading...
+[08:54:32] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:54:32]   Loaded.
+[08:54:32]  Loading plugin: timerfix
+[08:54:32]   >> TimerFix v1.5 successfully loaded.
+[08:54:32]   Loaded.
+[08:54:32]  Loading plugin: nativechecker
+[08:54:32]   Loaded.
+[08:54:32]  Loaded 7 plugins.
+
+[08:54:32] 
+[08:54:32] Filterscripts
+[08:54:32] ---------------
+[08:54:32]   Loaded 0 filterscripts.
+
+[08:54:32] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:54:32] [Gamemode] Loading gamemode...
+[08:54:32] [MySQL] Trying to connect to database...
+[08:54:35] [debug] Server received interrupt signal while executing dice.amx
+[08:54:35] [debug] AMX backtrace:
+[08:54:35] [debug] #0 native mysql_connect_file () in mysql.DLL
+[08:54:35] [debug] #1 00013b84 in public PawnCmd_OnGameModeInit () at ./src/main.pwn:35
+[08:54:35] [debug] #2 000028b0 in public SSCANF_OnGameModeInit ()  at ./modules\Pawn.CMD.inc:131
+[08:54:35] [debug] #3 00001ff8 in public Iter_OnGameModeInit () at ./modules\sscanf2.inc:1066
+[08:54:35] [debug] #4 native CallLocalFunction () in samp-server.exe
+[08:54:35] [debug] #5 00000bbc in public OnGameModeInit () at ./modules\foreach.inc:753
+[08:54:35] [debug] Native backtrace:
+[08:54:35] [debug] #0 77412aac in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[08:54:35] [debug] #1 698c932c in ?? () in C:\Windows\System32\mswsock.dll
+[08:54:35] [debug] #2 698c8df7 in ?? () in C:\Windows\System32\mswsock.dll
+[08:54:35] [debug] #3 698c9861 in ?? () in C:\Windows\System32\mswsock.dll
+[08:54:35] [debug] #4 77065792 in ?? () in C:\Windows\System32\WS2_32.dll
+[08:54:35] [debug] #5 6537dd71 in ?? () in libmariadb.dll
+[08:54:35] [debug] #6 6537dd1f in ?? () in libmariadb.dll
+[08:54:35] [debug] #7 6537d5fa in ?? () in libmariadb.dll
+[08:54:35] [debug] #8 6535ab04 in ?? () in libmariadb.dll
+[08:54:35] [debug] #9 6535c17d in ?? () in libmariadb.dll
+[08:54:35] [debug] #10 6544b369 in ?? () in plugins\mysql.DLL
+[08:54:35] [debug] #11 654523fa in ?? () in plugins\mysql.DLL
+[08:54:35] [debug] #12 6545358c in ?? () in plugins\mysql.DLL
+[08:54:35] [debug] #13 6546b902 in ?? () in plugins\mysql.DLL
+[08:54:35] [debug] #14 004010b6 in ?? () in samp-server.exe
+[08:54:35] [debug] #15 65720e9e in ?? () in plugins\crashdetect.DLL
+[08:54:35] [debug] #16 65727d02 in ?? () in plugins\crashdetect.DLL
+[08:54:35] [debug] #17 657189f5 in ?? () in plugins\crashdetect.DLL
+[08:54:35] [debug] #18 65720f0c in ?? () in plugins\crashdetect.DLL
+[08:54:35] [debug] #19 6555f428 in ?? () in plugins\streamer.DLL
+[08:54:35] [debug] #20 004746be in ?? () in samp-server.exe
+[08:54:35] [debug] #21 004010b6 in ?? () in samp-server.exe
+[08:54:35] [debug] #22 65720e9e in ?? () in plugins\crashdetect.DLL
+[08:54:35] [debug] #23 65727d02 in ?? () in plugins\crashdetect.DLL
+[08:54:35] [debug] #24 657189f5 in ?? () in plugins\crashdetect.DLL
+[08:54:35] [debug] #25 65720f0c in ?? () in plugins\crashdetect.DLL
+[08:54:35] [debug] #26 6555f428 in ?? () in plugins\streamer.DLL
+[08:54:35] [debug] #27 0046f654 in ?? () in samp-server.exe
+[08:54:35] [debug] #28 65646f6d in ?? () in C:\Windows\SYSTEM32\MSVCR120.dll
+[08:54:35] [debug] #29 69642f73 in ?? () in samp-server.exe
+[08:54:35] [debug] #30 612e6563 in ?? () in samp-server.exe
+[08:54:48] [MySQL] Could not connect to database!
+[08:54:48] [ERROR] Cannot start server
+[08:54:48] Number of vehicle models: 0
+[08:54:48] --- Server Shutting Down.
+[08:54:48] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[08:54:48] plugin.mysql: Unloading plugin...
+[08:54:48] plugin.mysql: Plugin unloaded.
+[08:54:48] 
+[08:54:48]  ===============================
+[08:54:48] 
+[08:54:48]      sscanf plugin unloaded.    
+[08:54:48] 
+[08:54:48]  ===============================
+[08:54:48] 
+[08:54:48] [Pawn.CMD] plugin unloaded
+[08:54:48] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:55:28] 
+[08:55:28] Server Plugins
+[08:55:28] --------------
+[08:55:28]  Loading plugin: crashdetect
+[08:55:28]   CrashDetect plugin 4.21
+[08:55:28]   Loaded.
+[08:55:28]  Loading plugin: streamer
+[08:55:28] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:55:28]   Loaded.
+[08:55:28]  Loading plugin: mysql
+[08:55:28]  >> plugin.mysql: R41-4 successfully loaded.
+[08:55:28]   Loaded.
+[08:55:28]  Loading plugin: sscanf
+[08:55:28] 
+[08:55:28]  ===============================
+[08:55:28] 
+[08:55:28]       sscanf plugin loaded.     
+[08:55:28] 
+[08:55:28]          Version: 2.13.8
+[08:55:28] 
+[08:55:28]    (c) 2022 Alex "Y_Less" Cole  
+[08:55:28] 
+[08:55:28]  ===============================
+[08:55:28] 
+[08:55:28]   Loaded.
+[08:55:28]  Loading plugin: pawncmd
+[08:55:28] [Pawn.CMD] plugin v3.4.0 loading...
+[08:55:28] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:55:28]   Loaded.
+[08:55:28]  Loading plugin: timerfix
+[08:55:28]   >> TimerFix v1.5 successfully loaded.
+[08:55:28]   Loaded.
+[08:55:28]  Loading plugin: nativechecker
+[08:55:28]   Loaded.
+[08:55:28]  Loaded 7 plugins.
+
+[08:55:28] 
+[08:55:28] Filterscripts
+[08:55:28] ---------------
+[08:55:28]   Loaded 0 filterscripts.
+
+[08:55:28] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:55:28] [Gamemode] Loading gamemode...
+[08:55:28] [MySQL] Trying to connect to database...
+[08:55:28] [MySQL] Successfully connected to database
+[08:55:28] [Dice Tables] Loading dice tables...
+[08:55:28] Number of vehicle models: 0
+[08:55:28] [Dice Tables] Loaded 3 tables
+[08:55:44] [debug] Server received interrupt signal
+[08:55:44] [debug] Native backtrace:
+[08:55:44] [debug] #0 77412dcc in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[08:55:44] [debug] #1 76be6d6f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[08:55:44] [debug] #2 0048d53c in ?? () in samp-server.exe
+[08:55:44] [debug] #3 0049b4a1 in ?? () in samp-server.exe
+[08:55:44] [debug] #4 0049b4b1 in ?? () in samp-server.exe
+[08:55:44] --- Server Shutting Down.
+[08:55:44] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[08:55:44] plugin.mysql: Unloading plugin...
+[08:55:44] plugin.mysql: Plugin unloaded.
+[08:55:44] 
+[08:55:44]  ===============================
+[08:55:44] 
+[08:55:44]      sscanf plugin unloaded.    
+[08:55:44] 
+[08:55:44]  ===============================
+[08:55:44] 
+[08:55:44] [Pawn.CMD] plugin unloaded
+[08:55:44] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:55:45] 
+[08:55:45] Server Plugins
+[08:55:45] --------------
+[08:55:45]  Loading plugin: crashdetect
+[08:55:45]   CrashDetect plugin 4.21
+[08:55:45]   Loaded.
+[08:55:45]  Loading plugin: streamer
+[08:55:45] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:55:45]   Loaded.
+[08:55:45]  Loading plugin: mysql
+[08:55:45]  >> plugin.mysql: R41-4 successfully loaded.
+[08:55:45]   Loaded.
+[08:55:45]  Loading plugin: sscanf
+[08:55:45] 
+[08:55:45]  ===============================
+[08:55:45] 
+[08:55:45]       sscanf plugin loaded.     
+[08:55:45] 
+[08:55:45]          Version: 2.13.8
+[08:55:45] 
+[08:55:45]    (c) 2022 Alex "Y_Less" Cole  
+[08:55:45] 
+[08:55:45]  ===============================
+[08:55:45] 
+[08:55:45]   Loaded.
+[08:55:45]  Loading plugin: pawncmd
+[08:55:45] [Pawn.CMD] plugin v3.4.0 loading...
+[08:55:45] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:55:45]   Loaded.
+[08:55:45]  Loading plugin: timerfix
+[08:55:45]   >> TimerFix v1.5 successfully loaded.
+[08:55:45]   Loaded.
+[08:55:45]  Loading plugin: nativechecker
+[08:55:45]   Loaded.
+[08:55:45]  Loaded 7 plugins.
+
+[08:55:45] 
+[08:55:45] Filterscripts
+[08:55:45] ---------------
+[08:55:45]   Loaded 0 filterscripts.
+
+[08:55:45] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:55:45] [Gamemode] Loading gamemode...
+[08:55:45] [MySQL] Trying to connect to database...
+[08:55:45] [MySQL] Successfully connected to database
+[08:55:45] [Dice Tables] Loading dice tables...
+[08:55:45] Number of vehicle models: 0
+[08:55:45] [Dice Tables] Loaded 3 tables
+[08:55:48] [debug] Server received interrupt signal
+[08:55:48] [debug] Native backtrace:
+[08:55:48] [debug] #0 77412dcc in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[08:55:48] [debug] #1 76be6d6f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[08:55:48] [debug] #2 0048d53c in ?? () in samp-server.exe
+[08:55:48] [debug] #3 0049b4a1 in ?? () in samp-server.exe
+[08:55:48] [debug] #4 0049b4b1 in ?? () in samp-server.exe
+[08:55:48] --- Server Shutting Down.
+[08:55:48] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[08:55:48] plugin.mysql: Unloading plugin...
+[08:55:48] plugin.mysql: Plugin unloaded.
+[08:55:48] 
+[08:55:48]  ===============================
+[08:55:48] 
+[08:55:48]      sscanf plugin unloaded.    
+[08:55:48] 
+[08:55:48]  ===============================
+[08:55:48] 
+[08:55:48] [Pawn.CMD] plugin unloaded
+[08:55:48] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:55:52] 
+[08:55:52] Server Plugins
+[08:55:52] --------------
+[08:55:52]  Loading plugin: crashdetect
+[08:55:52]   CrashDetect plugin 4.21
+[08:55:52]   Loaded.
+[08:55:52]  Loading plugin: streamer
+[08:55:52] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:55:52]   Loaded.
+[08:55:52]  Loading plugin: mysql
+[08:55:52]  >> plugin.mysql: R41-4 successfully loaded.
+[08:55:52]   Loaded.
+[08:55:52]  Loading plugin: sscanf
+[08:55:52] 
+[08:55:52]  ===============================
+[08:55:52] 
+[08:55:52]       sscanf plugin loaded.     
+[08:55:52] 
+[08:55:52]          Version: 2.13.8
+[08:55:52] 
+[08:55:52]    (c) 2022 Alex "Y_Less" Cole  
+[08:55:52] 
+[08:55:52]  ===============================
+[08:55:52] 
+[08:55:52]   Loaded.
+[08:55:52]  Loading plugin: pawncmd
+[08:55:52] [Pawn.CMD] plugin v3.4.0 loading...
+[08:55:52] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:55:52]   Loaded.
+[08:55:52]  Loading plugin: timerfix
+[08:55:52]   >> TimerFix v1.5 successfully loaded.
+[08:55:52]   Loaded.
+[08:55:52]  Loading plugin: nativechecker
+[08:55:52]   Loaded.
+[08:55:52]  Loaded 7 plugins.
+
+[08:55:52] 
+[08:55:52] Filterscripts
+[08:55:52] ---------------
+[08:55:52]   Loaded 0 filterscripts.
+
+[08:55:52] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:55:52] [Gamemode] Loading gamemode...
+[08:55:52] [MySQL] Trying to connect to database...
+[08:55:52] [MySQL] Successfully connected to database
+[08:55:53] [Dice Tables] Loading dice tables...
+[08:55:53] Number of vehicle models: 0
+[08:55:53] [Dice Tables] Loaded 3 tables
+[08:55:59] [debug] Server received interrupt signal
+[08:55:59] [debug] Native backtrace:
+[08:55:59] [debug] #0 77412dcc in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[08:55:59] [debug] #1 76be6d6f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[08:55:59] [debug] #2 0048d53c in ?? () in samp-server.exe
+[08:55:59] [debug] #3 0049b4a1 in ?? () in samp-server.exe
+[08:55:59] [debug] #4 0049b4b1 in ?? () in samp-server.exe
+[08:55:59] --- Server Shutting Down.
+[08:55:59] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[08:55:59] plugin.mysql: Unloading plugin...
+[08:55:59] plugin.mysql: Plugin unloaded.
+[08:55:59] 
+[08:55:59]  ===============================
+[08:55:59] 
+[08:55:59]      sscanf plugin unloaded.    
+[08:55:59] 
+[08:55:59]  ===============================
+[08:55:59] 
+[08:55:59] [Pawn.CMD] plugin unloaded
+[08:55:59] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:56:20] 
+[08:56:20] Server Plugins
+[08:56:20] --------------
+[08:56:20]  Loading plugin: crashdetect
+[08:56:20]   CrashDetect plugin 4.21
+[08:56:20]   Loaded.
+[08:56:20]  Loading plugin: streamer
+[08:56:20] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:56:20]   Loaded.
+[08:56:20]  Loading plugin: mysql
+[08:56:20]  >> plugin.mysql: R41-4 successfully loaded.
+[08:56:20]   Loaded.
+[08:56:20]  Loading plugin: sscanf
+[08:56:20] 
+[08:56:20]  ===============================
+[08:56:20] 
+[08:56:20]       sscanf plugin loaded.     
+[08:56:20] 
+[08:56:20]          Version: 2.13.8
+[08:56:20] 
+[08:56:20]    (c) 2022 Alex "Y_Less" Cole  
+[08:56:20] 
+[08:56:20]  ===============================
+[08:56:20] 
+[08:56:20]   Loaded.
+[08:56:20]  Loading plugin: pawncmd
+[08:56:20] [Pawn.CMD] plugin v3.4.0 loading...
+[08:56:20] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:56:20]   Loaded.
+[08:56:20]  Loading plugin: timerfix
+[08:56:20]   >> TimerFix v1.5 successfully loaded.
+[08:56:20]   Loaded.
+[08:56:20]  Loading plugin: nativechecker
+[08:56:20]   Loaded.
+[08:56:20]  Loaded 7 plugins.
+
+[08:56:20] 
+[08:56:20] Filterscripts
+[08:56:20] ---------------
+[08:56:20]   Loaded 0 filterscripts.
+
+[08:56:20] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:56:20] [Gamemode] Loading gamemode...
+[08:56:20] [MySQL] Trying to connect to database...
+[08:56:20] [MySQL] Successfully connected to database
+[08:56:20] [Dice Tables] Loading dice tables...
+[08:56:20] Number of vehicle models: 0
+[08:56:20] [Dice Tables] Loaded 3 tables
+[08:56:38] [debug] Server received interrupt signal
+[08:56:38] [debug] Native backtrace:
+[08:56:38] [debug] #0 77412dcc in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[08:56:38] [debug] #1 76be6d6f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[08:56:38] [debug] #2 0048d53c in ?? () in samp-server.exe
+[08:56:38] [debug] #3 0049b4a1 in ?? () in samp-server.exe
+[08:56:38] [debug] #4 0049b4b1 in ?? () in samp-server.exe
+[08:56:38] --- Server Shutting Down.
+[08:56:38] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[08:56:38] plugin.mysql: Unloading plugin...
+[08:56:38] plugin.mysql: Plugin unloaded.
+[08:56:38] 
+[08:56:38]  ===============================
+[08:56:38] 
+[08:56:38]      sscanf plugin unloaded.    
+[08:56:38] 
+[08:56:38]  ===============================
+[08:56:38] 
+[08:56:38] [Pawn.CMD] plugin unloaded
+[08:56:38] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:56:39] 
+[08:56:39] Server Plugins
+[08:56:39] --------------
+[08:56:39]  Loading plugin: crashdetect
+[08:56:39]   CrashDetect plugin 4.21
+[08:56:39]   Loaded.
+[08:56:39]  Loading plugin: streamer
+[08:56:39] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:56:39]   Loaded.
+[08:56:39]  Loading plugin: mysql
+[08:56:39]  >> plugin.mysql: R41-4 successfully loaded.
+[08:56:39]   Loaded.
+[08:56:39]  Loading plugin: sscanf
+[08:56:39] 
+[08:56:39]  ===============================
+[08:56:39] 
+[08:56:39]       sscanf plugin loaded.     
+[08:56:39] 
+[08:56:39]          Version: 2.13.8
+[08:56:39] 
+[08:56:39]    (c) 2022 Alex "Y_Less" Cole  
+[08:56:39] 
+[08:56:39]  ===============================
+[08:56:39] 
+[08:56:39]   Loaded.
+[08:56:39]  Loading plugin: pawncmd
+[08:56:39] [Pawn.CMD] plugin v3.4.0 loading...
+[08:56:39] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:56:39]   Loaded.
+[08:56:39]  Loading plugin: timerfix
+[08:56:39]   >> TimerFix v1.5 successfully loaded.
+[08:56:39]   Loaded.
+[08:56:39]  Loading plugin: nativechecker
+[08:56:39]   Loaded.
+[08:56:39]  Loaded 7 plugins.
+
+[08:56:39] 
+[08:56:39] Filterscripts
+[08:56:39] ---------------
+[08:56:39]   Loaded 0 filterscripts.
+
+[08:56:39] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:56:39] [Gamemode] Loading gamemode...
+[08:56:39] [MySQL] Trying to connect to database...
+[08:56:39] [MySQL] Successfully connected to database
+[08:56:39] [Dice Tables] Loading dice tables...
+[08:56:39] Number of vehicle models: 0
+[08:56:39] [Dice Tables] Loaded 3 tables
+[08:56:57] [debug] Server received interrupt signal
+[08:56:57] [debug] Native backtrace:
+[08:56:57] [debug] #0 77412dcc in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[08:56:57] [debug] #1 76be6d6f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[08:56:57] [debug] #2 0048d53c in ?? () in samp-server.exe
+[08:56:57] [debug] #3 0049b4a1 in ?? () in samp-server.exe
+[08:56:57] [debug] #4 0049b4b1 in ?? () in samp-server.exe
+[08:56:57] --- Server Shutting Down.
+[08:56:57] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[08:56:57] plugin.mysql: Unloading plugin...
+[08:56:57] plugin.mysql: Plugin unloaded.
+[08:56:57] 
+[08:56:57]  ===============================
+[08:56:57] 
+[08:56:57]      sscanf plugin unloaded.    
+[08:56:57] 
+[08:56:57]  ===============================
+[08:56:57] 
+[08:56:57] [Pawn.CMD] plugin unloaded
+[08:56:57] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:56:58] 
+[08:56:58] Server Plugins
+[08:56:58] --------------
+[08:56:58]  Loading plugin: crashdetect
+[08:56:58]   CrashDetect plugin 4.21
+[08:56:58]   Loaded.
+[08:56:58]  Loading plugin: streamer
+[08:56:58] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:56:58]   Loaded.
+[08:56:58]  Loading plugin: mysql
+[08:56:58]  >> plugin.mysql: R41-4 successfully loaded.
+[08:56:58]   Loaded.
+[08:56:58]  Loading plugin: sscanf
+[08:56:58] 
+[08:56:58]  ===============================
+[08:56:58] 
+[08:56:58]       sscanf plugin loaded.     
+[08:56:58] 
+[08:56:58]          Version: 2.13.8
+[08:56:58] 
+[08:56:58]    (c) 2022 Alex "Y_Less" Cole  
+[08:56:58] 
+[08:56:58]  ===============================
+[08:56:58] 
+[08:56:58]   Loaded.
+[08:56:58]  Loading plugin: pawncmd
+[08:56:58] [Pawn.CMD] plugin v3.4.0 loading...
+[08:56:58] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:56:58]   Loaded.
+[08:56:58]  Loading plugin: timerfix
+[08:56:58]   >> TimerFix v1.5 successfully loaded.
+[08:56:58]   Loaded.
+[08:56:58]  Loading plugin: nativechecker
+[08:56:58]   Loaded.
+[08:56:58]  Loaded 7 plugins.
+
+[08:56:58] 
+[08:56:58] Filterscripts
+[08:56:58] ---------------
+[08:56:58]   Loaded 0 filterscripts.
+
+[08:56:58] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:56:58] [Gamemode] Loading gamemode...
+[08:56:58] [MySQL] Trying to connect to database...
+[08:56:58] [MySQL] Successfully connected to database
+[08:56:58] [Dice Tables] Loading dice tables...
+[08:56:58] Number of vehicle models: 0
+[08:56:58] [Dice Tables] Loaded 3 tables
+[08:57:36] [debug] Server received interrupt signal
+[08:57:37] [debug] Native backtrace:
+[08:57:37] [debug] #0 77412dcc in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[08:57:37] [debug] #1 76be6d6f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[08:57:37] [debug] #2 0048d53c in ?? () in samp-server.exe
+[08:57:37] [debug] #3 0049b4a1 in ?? () in samp-server.exe
+[08:57:37] [debug] #4 0049b4b1 in ?? () in samp-server.exe
+[08:57:37] --- Server Shutting Down.
+[08:57:37] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[08:57:37] plugin.mysql: Unloading plugin...
+[08:57:37] plugin.mysql: Plugin unloaded.
+[08:57:37] 
+[08:57:37]  ===============================
+[08:57:37] 
+[08:57:37]      sscanf plugin unloaded.    
+[08:57:37] 
+[08:57:37]  ===============================
+[08:57:37] 
+[08:57:37] [Pawn.CMD] plugin unloaded
+[08:57:37] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:57:37] 
+[08:57:37] Server Plugins
+[08:57:37] --------------
+[08:57:37]  Loading plugin: crashdetect
+[08:57:37]   CrashDetect plugin 4.21
+[08:57:37]   Loaded.
+[08:57:37]  Loading plugin: streamer
+[08:57:37] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:57:37]   Loaded.
+[08:57:37]  Loading plugin: mysql
+[08:57:37]  >> plugin.mysql: R41-4 successfully loaded.
+[08:57:37]   Loaded.
+[08:57:37]  Loading plugin: sscanf
+[08:57:37] 
+[08:57:37]  ===============================
+[08:57:37] 
+[08:57:37]       sscanf plugin loaded.     
+[08:57:37] 
+[08:57:37]          Version: 2.13.8
+[08:57:37] 
+[08:57:37]    (c) 2022 Alex "Y_Less" Cole  
+[08:57:37] 
+[08:57:37]  ===============================
+[08:57:37] 
+[08:57:37]   Loaded.
+[08:57:37]  Loading plugin: pawncmd
+[08:57:37] [Pawn.CMD] plugin v3.4.0 loading...
+[08:57:37] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:57:37]   Loaded.
+[08:57:37]  Loading plugin: timerfix
+[08:57:37]   >> TimerFix v1.5 successfully loaded.
+[08:57:37]   Loaded.
+[08:57:37]  Loading plugin: nativechecker
+[08:57:37]   Loaded.
+[08:57:37]  Loaded 7 plugins.
+
+[08:57:37] 
+[08:57:37] Filterscripts
+[08:57:37] ---------------
+[08:57:37]   Loaded 0 filterscripts.
+
+[08:57:37] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:57:37] [Gamemode] Loading gamemode...
+[08:57:37] [MySQL] Trying to connect to database...
+[08:57:37] [MySQL] Successfully connected to database
+[08:57:37] [Dice Tables] Loading dice tables...
+[08:57:37] Number of vehicle models: 0
+[08:57:37] [Dice Tables] Loaded 3 tables
+[08:57:48] [debug] Server received interrupt signal
+[08:57:48] [debug] Native backtrace:
+[08:57:48] [debug] #0 77412dcc in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[08:57:48] [debug] #1 76be6d6f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[08:57:48] [debug] #2 0048d53c in ?? () in samp-server.exe
+[08:57:48] [debug] #3 0049b4a1 in ?? () in samp-server.exe
+[08:57:48] [debug] #4 0049b4b1 in ?? () in samp-server.exe
+[08:57:48] --- Server Shutting Down.
+[08:57:48] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[08:57:48] plugin.mysql: Unloading plugin...
+[08:57:48] plugin.mysql: Plugin unloaded.
+[08:57:48] 
+[08:57:48]  ===============================
+[08:57:48] 
+[08:57:48]      sscanf plugin unloaded.    
+[08:57:48] 
+[08:57:48]  ===============================
+[08:57:48] 
+[08:57:48] [Pawn.CMD] plugin unloaded
+[08:57:48] [plugin.timerfix] Plugsin successfully unloaded!
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:58:24] 
+[08:58:24] Server Plugins
+[08:58:24] --------------
+[08:58:24]  Loading plugin: crashdetect
+[08:58:24]   CrashDetect plugin 4.21
+[08:58:24]   Loaded.
+[08:58:24]  Loading plugin: streamer
+[08:58:24] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[08:58:24]   Loaded.
+[08:58:24]  Loading plugin: mysql
+[08:58:24]  >> plugin.mysql: R41-4 successfully loaded.
+[08:58:24]   Loaded.
+[08:58:24]  Loading plugin: sscanf
+[08:58:24] 
+[08:58:24]  ===============================
+[08:58:24] 
+[08:58:24]       sscanf plugin loaded.     
+[08:58:24] 
+[08:58:24]          Version: 2.13.8
+[08:58:24] 
+[08:58:24]    (c) 2022 Alex "Y_Less" Cole  
+[08:58:24] 
+[08:58:24]  ===============================
+[08:58:24] 
+[08:58:24]   Loaded.
+[08:58:24]  Loading plugin: pawncmd
+[08:58:24] [Pawn.CMD] plugin v3.4.0 loading...
+[08:58:24] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 18:12:31
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD
+
+[08:58:24]   Loaded.
+[08:58:24]  Loading plugin: timerfix
+[08:58:24]   >> TimerFix v1.5 successfully loaded.
+[08:58:24]   Loaded.
+[08:58:24]  Loading plugin: nativechecker
+[08:58:24]   Loaded.
+[08:58:24]  Loaded 7 plugins.
+
+[08:58:24] 
+[08:58:24] Filterscripts
+[08:58:24] ---------------
+[08:58:24]   Loaded 0 filterscripts.
+
+[08:58:24] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[08:58:24] [Gamemode] Loading gamemode...
+[08:58:24] [MySQL] Trying to connect to database...
+[08:58:24] [MySQL] Successfully connected to database
+[08:58:24] [Dice Tables] Loading dice tables...
+[08:58:24] Number of vehicle models: 0
+[08:58:24] [Dice Tables] Loaded 3 tables

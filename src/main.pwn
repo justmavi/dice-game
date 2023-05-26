@@ -1,3 +1,5 @@
+#include "./src/constants/index.pwn"
+
 #include "a_samp"
 #include "a_mysql"
 #include "foreach"
@@ -10,7 +12,6 @@
 
 #pragma warning disable 239
 
-#include "./src/constants/index.pwn"
 #include "./src/enums/index.pwn"
 #include "./src/initializers/index.pwn"
 

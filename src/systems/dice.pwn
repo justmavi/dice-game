@@ -36,7 +36,7 @@ stock OnPlayerPressEnterAtTheTable(playerid)
     {
         if (DiceTableInfo[tableId][dtDillerId] != INVALID_PLAYER_ID)
         {
-            return SendClientMessage(playerid, COLOR_GREY, !"За данным столом уже стоит крупье!");
+            return SendClientMessage(playerid, COLOR_GREY, !"За этим столом уже стоит крупье!");
         }
 
         DiceTableInfo[tableId][dtDillerId] = playerid;
@@ -49,9 +49,6 @@ stock OnPlayerPressEnterAtTheTable(playerid)
 
         TextDrawShowForPlayer(playerid, DicePerTableTextDraws[tableId][i]);
     }
-
-    // фикс олд бага на samp rp, когда можно было передвигаться, находясь за столом, с помощью ESC + TAB + ESC.
-    TogglePlayerFreeze(playerid, false);
 
     new str[11];
     valstr(str, PlayerData[playerid][pMoney]);
@@ -91,7 +88,7 @@ stock OnPlayerClickDiceTableTextDraw(playerid, Text: clickedid)
 
     if (clickedid == DiceGlobalTextDraws[DICE_TABLE_SETBET_TD_IDX])
     {
-        if (DiceTableInfo[tableId][dtIsGameStarted]) return SendClientMessage(playerid, COLOR_GREY, !"Игра уже запущена!");
+        if (DiceTableInfo[tableId][dtIsGameStarted]) return SendClientMessage(playerid, COLOR_GREY, !"Дождитесь следующего раунда!");
 
         if (PlayerData[playerid][pDiller]) 
         {
@@ -103,7 +100,7 @@ stock OnPlayerClickDiceTableTextDraw(playerid, Text: clickedid)
         new slot = DiceTableInfo[tableId][dtEmptySlotId],
             bet = DiceTableInfo[tableId][dtBet];
 
-        if (PlayerSlotInTable[playerid] != -1) return SendClientMessage(playerid, COLOR_GREY, !"Вы уже поставили ставку! Чтобы снимать, нажмите \"EXIT\" или \"ESC\".");
+        if (PlayerSlotInTable[playerid] != -1) return SendClientMessage(playerid, COLOR_GREY, !"Вы уже поставили ставку! Чтобы снимать, нНажмите \"EXIT\" или \"ESC\".");
         if (!bet) return SendClientMessage(playerid, COLOR_GREY, !"Подождите, пока крупье установит ставку!");
         if (slot == -1) return SendClientMessage(playerid, COLOR_GREY, !"За столом больше нет мест!");
         if (!HasPlayerMoney(playerid, bet)) return SendClientMessage(playerid, COLOR_GREY, !"Недостаточно средств на руках!");
@@ -126,14 +123,14 @@ stock OnPlayerClickDiceTableTextDraw(playerid, Text: clickedid)
         if (PlayerData[playerid][pDiller]) 
         {
             if (DiceTableInfo[tableId][dtIsGameStarted]) return SendClientMessage(playerid, COLOR_GREY, !"Игра уже запущена!");
-            if (DiceTableInfo[tableId][dtPlayersCount] < DICE_MIN_PLAYERS_NEED_TO_START) return SendClientMessage(playerid, COLOR_GREY, !"Подождите игроков!");
+            if (DiceTableInfo[tableId][dtPlayersCount] < DICE_MIN_PLAYERS_NEED_TO_START) return SendClientMessage(playerid, COLOR_GREY, !"Дождитесь игроков!");
 
-            SendClientMessage(playerid, COLOR_GREEN, !"Игра успешно запущена. У игроков 15 секунд на бросок.");
+            SendClientMessage(playerid, COLOR_GREEN, !"Игра успешно запущена! У игроков 15 секунд, чтобы бросить кости.");
             StartDiceGame(tableId);
         }
         else
         {
-            if (!DiceTableInfo[tableId][dtIsGameStarted]) return SendClientMessage(playerid, COLOR_GREY, !"Игра ещё не запущена!");
+            if (!DiceTableInfo[tableId][dtIsGameStarted]) return SendClientMessage(playerid, COLOR_GREY, !"Игра ещё не началась!");
             
             new slot = PlayerSlotInTable[playerid]; 
 
@@ -342,5 +339,5 @@ stock StartDiceGame(tableId)
 {
     DiceTableInfo[tableId][dtTime] = DICE_TIMER_TIME;
     DiceTableInfo[tableId][dtIsGameStarted] = true;
-    BroadcastToTablePlayersOnly(tableId, MESSAGE_TYPE_CHAT_TEXT, !"У вас есть "DICE_TIMER_TIME_STR" секунд, чтобы бросить кости (кнопка \"DICE\"). Иначе система сделает это за Вас.", COLOR_HARD_PURPLE);
+    BroadcastToTablePlayersOnly(tableId, MESSAGE_TYPE_CHAT_TEXT, !"У вас "DICE_TIMER_TIME_STR" секунд, чтобы бросить кости (кнопка \"DICE\"). иначе система сделает это за вас!", COLOR_HARD_PURPLE);
 }
