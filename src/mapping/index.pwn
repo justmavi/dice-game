@@ -1,0 +1,1 @@
+#include "./src/mapping/removed-objects/index.pwn"
