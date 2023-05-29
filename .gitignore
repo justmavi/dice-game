@@ -3,3 +3,4 @@ log*
 gamemodes
 *.dll
 *.exe
+server_log.txt
