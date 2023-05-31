@@ -1,5 +1,0 @@
-#define   COLOR_GREY        (0xBFBFBFFF)
-#define   COLOR_GREEN       (0x37AB09FF)
-#define   COLOR_YELLOW      (0xE6DE09FF)
-#define 	COLOR_PURPLE      (0xC2A2DAFF)
-#define   COLOR_HARD_PURPLE (0x5B3278FF)

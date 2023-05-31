@@ -1,1 +1,0 @@
-#include "./src/query-handler-callbacks/load-dice-tables.callback.pwn"

@@ -1,5 +1,0 @@
-#include "./src/enums/coords.enum.pwn"
-#include "./src/enums/dice-table-info.enum.pwn"
-#include "./src/enums/dice-table-update-type.enum.pwn"
-#include "./src/enums/player-info.enum.pwn"
-#include "./src/enums/table-message-type.enum.pwn"
