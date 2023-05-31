@@ -1,0 +1,7 @@
+#include "./src/functions/dice/index.pwn"
+#include "./src/functions/set-player-money.function.pwn"
+#include "./src/functions/has-player-money.function.pwn"
+#include "./src/functions/find-free-index.function.pwn"
+#include "./src/functions/abs.function.pwn"
+#include "./src/functions/getmax.function.pwn"
+#include "./src/functions/preload-anim-lib.function.pwn"

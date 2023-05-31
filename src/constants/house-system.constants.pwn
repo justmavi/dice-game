@@ -1,0 +1,2 @@
+#define MAX_HOUSES (100)
+#define MAX_HOUSE_CLASSES (6)

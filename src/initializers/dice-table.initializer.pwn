@@ -1,0 +1,20 @@
+new const E_DICE_TABLE_INFO_INIT[E_DICE_TABLE_INFO] = 
+{
+    0,
+    INVALID_PLAYER_ID,
+    0,
+    0,
+    0,
+    0,
+    {0.0, 0.0, 0.0},
+    0,
+    0,
+    INVALID_OBJECT_ID,
+    -1,
+    STREAMER_TAG_3D_TEXT_LABEL: INVALID_3DTEXT_ID,
+    {INVALID_PLAYER_ID, INVALID_PLAYER_ID, INVALID_PLAYER_ID, INVALID_PLAYER_ID, INVALID_PLAYER_ID},
+    {0, 0, 0, 0, 0},
+    0,
+    false,
+    0
+};
