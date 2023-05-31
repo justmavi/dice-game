@@ -218,7 +218,6 @@ stock RemovePlayerFromDiceTable(playerid)
         }
     }
 
-    TogglePlayerFreeze(playerid, true);
     ClearAnimations(playerid);
 
     Iter_Remove(DiceTablePlayers[tableId], playerid);
