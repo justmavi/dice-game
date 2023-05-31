@@ -1,4 +1,5 @@
 {
   "files.autoGuessEncoding": true,
-  "files.encoding": "windows1251"
+  "files.encoding": "windows1251",
+  "editor.tabSize": 4
 }
