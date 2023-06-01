@@ -1,0 +1,6 @@
+enum E_GENDER 
+{
+    GENDER_NONE = 0,
+    GENDER_MALE,
+    GENDER_FEMALE
+}

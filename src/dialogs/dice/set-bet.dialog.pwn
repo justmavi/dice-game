@@ -1,4 +1,4 @@
-dialog SetBetDialog(playerid, response, const inputtext[]) 
+dialog SetBetDialog(playerid, response, inputtext[]) 
 {
     if (!response) return 1;
 

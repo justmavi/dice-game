@@ -7,4 +7,6 @@ enum E_PLAYER_INFO
     pPromoId,
     pMoney,
     bool: pDiller,
+    E_GENDER: pGender,
+    bool: pIsLoggedIn
 }

@@ -10,13 +10,10 @@ dtempl TemplateOfRefInputDialog(playerid)
     );
 }
 
-dialog RefInputDialog(playerid, response, const inputtext[])
+dialog RefInputDialog(playerid, response, inputtext[])
 {
     if (!response) 
-    {
-        // TODO: save player account
-        return 1;
-    }
+        return Dialog_Show(playerid, !"TemplateOfGenderSelectDialog");
 
     static const queryStringPattern[] = "SELECT `id`, 1 as type FROM `accounts` WHERE `nick` = '%q' UNION ALL SELECT `id`, 2 as type FROM `promocodes` WHERE `name` = '%q'";
     new queryString[sizeof queryStringPattern - 4 + MAX_PLAYER_NAME * 2];

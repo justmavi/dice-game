@@ -2,3 +2,4 @@
 #include "./src/constants/colors.constants.pwn"
 #include "./src/constants/dice-system.constants.pwn"
 #include "./src/constants/accounts-system.constants.pwn"
+#include "./src/constants/skin.constants.pwn"

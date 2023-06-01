@@ -6,10 +6,12 @@
 #include "sscanf2"
 #include "Pawn.CMD"
 #include "streamer"
+//#include "skip_samp_skin_select"
 #include "timerfix"
 #include "tdw_dialog"
 #include "samp_bcrypt"
-
+#include "nex-ac_ru.lang"
+#include "nex-ac"
 #pragma warning disable 239
 
 #include "./src/enums/index.pwn"
@@ -20,8 +22,8 @@ main() { }
 new MySQL: dbConnection;
 
 #include "./src/textdraws/index.pwn"
-#include "./src/query-handler-callbacks/index.pwn"
 #include "./src/systems/index.pwn"
+#include "./src/query-handler-callbacks/index.pwn"
 #include "./src/mapping/index.pwn"
 #include "./src/functions/index.pwn"
 #include "./src/commands/index.pwn"
@@ -57,11 +59,21 @@ public OnGameModeInit()
 public OnGameModeExit()
 {
     mysql_close(dbConnection);
+    
+    return 1;
 }
 
 public OnPlayerConnect(playerid) 
 {
+
+    TogglePlayerSpectating(playerid, 1);
+	SetPlayerCameraPos(playerid, -2610.0212,2292.5464,8.3594);
+	SetPlayerCameraLookAt(playerid, -2610.0212,2292.5464,8.3594);
+
+	ClearDeathMessageToPlayer(playerid);
+
     OnPlayerInitializingAccount(playerid);
+
     Remove4DragonObjectsForPlayer(playerid);
 
     return 1;
@@ -134,12 +146,6 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
     return 1;
 }
 
-public OnPlayerRequestClass(playerid, classid)
-{
-    SetSpawnInfo(playerid, 0, 153, 2016.11, 1017.15, 996.87, 269.15, 26, 36, 28, 150, 0, 0);
-    return 1;
-}
-
 public OnPlayerSpawn(playerid) 
 {
     SetPlayerInterior(playerid, 10);
@@ -147,6 +153,15 @@ public OnPlayerSpawn(playerid)
 
     return 1;
 }
+
+public OnPlayerCommandReceived(playerid, cmd[], params[], flags)
+{
+	if (!PlayerData[playerid][pIsLoggedIn])
+		return SendClientMessage(playerid, COLOR_GREY, "Необходимо авторизоваться!");
+
+	return 1;
+}
+
 
 forward OnTimerTick();
 public OnTimerTick()

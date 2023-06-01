@@ -19,7 +19,7 @@ dtempl TemplateOfRegistrationDialog(playerid)
     );
 }
 
-dialog PlayerRegistrationDialog(playerid, response, const inputtext[])
+dialog PlayerRegistrationDialog(playerid, response, inputtext[])
 {
     if (!response)
     {
@@ -28,7 +28,7 @@ dialog PlayerRegistrationDialog(playerid, response, const inputtext[])
     }
 
     new len = strlen(inputtext);
-    if (!(MIN_PASSWORD_LENGTH <= len <= MAX_PASSWORD_LENGTH))
+    if (len < MIN_PASSWORD_LENGTH || len > MAX_PASSWORD_LENGTH)
     {
         SendClientMessage(playerid, COLOR_GREY, !"Минимальная длина пароля — "MIN_PASSWORD_LENGTH_STR", максимальная — "MAX_PASSWORD_LENGTH_STR"");
         return Dialog_Show(playerid, !"TemplateOfRegistrationDialog");

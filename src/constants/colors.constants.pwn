@@ -6,10 +6,10 @@
 #define     COLOR_HARD_PURPLE   (0x5B3278FF)
 #define 	COLOR_LIGHTRED 	    (0xFF6347AA)
 
-#define     CWHITE          ("FFFFFF")
-#define     CGREY           ("BFBFBF")
-#define     CGREEN          ("37AB09")
-#define     CYELLOW         ("E6DE09")
-#define     CPURPLE         ("C2A2DA")
-#define     CHARDPURPLE     ("5B3278")
-#define 	CLIGHTRED 	    ("FF6347")
+#define     CWHITE          "{FFFFFF}"
+#define     CGREY           "{BFBFBF}"
+#define     CGREEN          "{37AB09}"
+#define     CYELLOW         "{E6DE09}"
+#define     CPURPLE         "{C2A2DA}"
+#define     CHARDPURPLE     "{5B3278}"
+#define 	CLIGHTRED 	    "{FF6347}"

@@ -6,5 +6,7 @@ new const E_PLAYER_INFO_INIT[E_PLAYER_INFO] =
     0,
     0,
     0,
+    false,
+    GENDER_NONE,
     false
 };

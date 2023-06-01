@@ -13,7 +13,7 @@ public OnRefCheck(playerid, const referer[])
     new id, 
         E_REF_TYPE: type;
 
-    cache_get_value_name_int(0, "type", type);
+    cache_get_value_name_int(0, "type", _:type);
     cache_get_value_name_int(0, "id", id);
 
     if (type == REF_TYPE_USER)
@@ -36,4 +36,8 @@ public OnRefCheck(playerid, const referer[])
         SendClientMessage(playerid, COLOR_GREEN, message);
         SendClientMessage(playerid, COLOR_GREEN, !"После достижении 5 уровня Вам будет выдан бонус!");
     }
+
+    Dialog_Show(playerid, !"TemplateOfGenderSelectDialog");
+
+    return 1;
 }
