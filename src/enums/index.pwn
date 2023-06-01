@@ -3,3 +3,4 @@
 #include "./src/enums/dice-table-update-type.enum.pwn"
 #include "./src/enums/player-info.enum.pwn"
 #include "./src/enums/table-message-type.enum.pwn"
+#include "./src/enums/ref-type.enum.pwn"

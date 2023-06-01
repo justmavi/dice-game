@@ -1,6 +1,6 @@
+#include "a_samp"
 #include "./src/constants/index.pwn"
 
-#include "a_samp"
 #include "a_mysql"
 #include "foreach"
 #include "sscanf2"
@@ -8,6 +8,7 @@
 #include "streamer"
 #include "timerfix"
 #include "tdw_dialog"
+#include "samp_bcrypt"
 
 #pragma warning disable 239
 
@@ -17,7 +18,6 @@
 main() { }
 
 new MySQL: dbConnection;
-new PlayerData[MAX_PLAYERS][E_PLAYER_INFO];
 
 #include "./src/textdraws/index.pwn"
 #include "./src/query-handler-callbacks/index.pwn"
@@ -61,9 +61,7 @@ public OnGameModeExit()
 
 public OnPlayerConnect(playerid) 
 {
-    PlayerData[playerid] = E_PLAYER_INFO_INIT;
-    GetPlayerName(playerid, PlayerData[playerid][pName], MAX_PLAYER_NAME);
-    
+    OnPlayerInitializingAccount(playerid);
     Remove4DragonObjectsForPlayer(playerid);
 
     return 1;

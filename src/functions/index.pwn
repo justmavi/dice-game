@@ -5,3 +5,4 @@
 #include "./src/functions/abs.function.pwn"
 #include "./src/functions/getmax.function.pwn"
 #include "./src/functions/preload-anim-lib.function.pwn"
+#include "./src/functions/format-dialog-title.function.pwn"

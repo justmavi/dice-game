@@ -1,6 +1,10 @@
 new const E_PLAYER_INFO_INIT[E_PLAYER_INFO] = 
 {
-    false,
+    MYSQL_INVALID_CACHE,
     EOS,
-    0
+    EOS,
+    0,
+    0,
+    0,
+    false
 };
